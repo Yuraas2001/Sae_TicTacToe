@@ -27,7 +27,7 @@ public class TicTacToe {
 
             board[row][col] = currentPlayer;
 
-            // Vérifie si le joueur courant gagne
+            
             if (checkWin(board, currentPlayer)) {
                 printBoard(board);
                 System.out.println("Félicitations ! Le joueur " + currentPlayer + " a gagné !");
@@ -59,7 +59,7 @@ public class TicTacToe {
         }
     }
 
-    // Vérifie si un joueur a gagné
+    
     public static boolean checkWin(char[][] board, char player) {
         // Vérifie les lignes
         for (int i = 0; i < 3; i++) {
