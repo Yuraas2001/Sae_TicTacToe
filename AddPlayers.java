@@ -20,15 +20,15 @@ public class AddPlayers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_players);
 
-        // Initialisation du DatabaseManager
+       
         dbManager = new DatabaseManager(this);
 
-        // Récupération des vues
+    
         EditText playerOneInput = findViewById(R.id.player_one_name);
         RadioGroup symbolGroup = findViewById(R.id.player_one_symbol_group); // Groupe de boutons radio
         Button startGameButton = findViewById(R.id.startGameButton);
 
-        // Gestion du choix du symbole via le groupe de boutons radio
+    
         symbolGroup.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == R.id.player_one_x) {
                 playerSymbol = "X"; // Le joueur choisit "X"
